@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+</head>
+<body>
+    <h1>Week 3 Notes</h1>
+    <h3>Objects</h3>
+    <p>An object in JavaScript is a self-contained set
+         of related values and functions. They act as a collection 
+         of named properties that map to any JavaScript value such as strings, 
+         numbers, booleans, arrays and functions. If a property’s value is a function, 
+         it is known as a method.</p>
+         <p>We add all the content within "{}" and to locate them, we use a "."<br>
+        For example: pets.name</p>
+        <p>The Object.keys() method will return an array of all the keys of any object
+             that is provided as an argument. </p>
+        <p> Object.values() that works in the same way, but returns an array 
+            of all the object's value</p>
+        <p>Object.entries() returns an array of key-value pairs.</p>
+    <h3>DOM</h3>
+    <p>It helps us to access any document in HTML. For this we use
+        document.getelementbyid("nameofdocument")<br>
+        We can also assign variable to it so it will display what the label we are 
+        looking for. <br>
+        innerHTML finds the content within the label<br><br>
+        Separated by dots, we can even change the style of the tags 
+        that we have in our document.<br><br>
+        Making changes through the DOM makes it easier.
+    </p>
+    <h3>Events</h3>
+    <p>Events help us know when something happen in our website. <br>
+        Here's an example of an event:</p>
+    <div>
+        <button id="button" class="test-button">Change</button>
+    </div>
+    <script>
+        let button = document.getElementById("button");
+
+        button.addEventListener('click', function(){
+            console.log("you have clicked me");
+        })
+        button.addEventListener('mouseover', function(){
+            console.log("I've detected your mouse");
+        })
+        button.addEventListener('mouseout', function(){
+            console.log("Goodbye mouse");
+        })
+    </script>
+</body>
+</html>
