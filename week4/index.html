@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+    <script src="objoriented.js"></script>
+</head>
+<body>
+    <h1>Week 4 Notes</h1>
+    <h3>Forms</h3>
+    <p>Here's an example of a form. Try clicking on "search"</p>
+    <form name='search' action='/search'>
+        <input name='searchInput' value="">
+        <button type='submit'>Search</button>
+    </form>
+
+    <h3>Object-Oriented Programming in JavaScript</h3>
+    <p>Also called as "OOP"  involves separating the code 
+        into objects that have properties and methods.</p>
+    
+    <p><b>Important:</b><br>There can only be one constructor within a class,
+        but we can add as many methods as we'd like </p>
+        <p>Please look at the Console for the examples I worked on this week.</p>
+    <script>
+       const form = document.forms['search'];
+       form.addEventListener ('submit', search, false);
+       
+       function search() {
+           alert(' Form Submitted');
+        }
+        function search(event) {
+            alert('Form Submitted');
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>
