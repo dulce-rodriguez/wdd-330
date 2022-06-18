@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330</title>
+    <script src="windowobj.js"></script>
+   
+</head>
+<body>
+    <h1>Week 9 Notes</h1>
+    <h3>Browser object model</h3>
+    <p>I did some testing by looking at the 
+        following video: <br>
+        <b>Note:</b> Most of it is commented out for easier
+        navigation.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZrHusMEcNak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h3>HTML 5 APIs</h3>
+    <p>Click on the button to get the coordinates</p>
+    <button id="button">Try it</button>
+    <p id="demo"></p>
+    <p>Still testing this out. I used to work with onclick but 
+        now it doesn't work so I wasn't able to test out all the 
+        examples in the following video:</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/shoJ-PrfL3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script>
+    
+    let button = document.getElementById("button");
+
+    button.addEventListener('click', function() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+          console.log();
+    });
+
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude + 
+      "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+</body>
+</html>
