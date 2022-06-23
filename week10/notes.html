@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <h1>Week 10 notes</h1>
+    <h3>Form Validation</h3>
+    <p>Find an example of form validation below</p>
+    <div id="error"></div>
+    <form id="form" action = "/" method = "GET"></form>
+    <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password">
+    </div>
+    <button type="submit">submit</button>
+
+    <h3>Fetch</h3>
+    <p>It passes a url as the first property, and it has 
+        a second property which is optional 
+    </p>
+    <p>The Promise returned from fetch() won't reject on 
+        HTTP error status even if the response is an HTTP 
+        404 or 500. Instead, as soon as the server responds
+         with headers, the Promise will resolve normally, 
+         and it will only reject on network failure or if 
+         anything prevented the request from completing.</p>
+         <p>Find more on the following video:<br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cuEtnrL9-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+</body>
+</html>
