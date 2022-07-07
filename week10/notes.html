@@ -10,18 +10,11 @@
 <body>
     <h1>Week 10 notes</h1>
     <h3>Form Validation</h3>
-    <p>Find an example of form validation below</p>
-    <div id="error"></div>
-    <form id="form" action = "/" method = "GET"></form>
-    <div>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required>
-    </div>
-    <div>
-        <label for="password">Password</label>
-        <input id="password" name="password" type="password">
-    </div>
-    <button type="submit">submit</button>
+    <p>Find an example of form validation below in which the form will not go through unless a name is written</p>
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+      </form>
 
     <h3>Fetch</h3>
     <p>It passes a url as the first property, and it has 
@@ -33,7 +26,27 @@
          with headers, the Promise will resolve normally, 
          and it will only reject on network failure or if 
          anything prevented the request from completing.</p>
-         <p>Find more on the following video:<br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/cuEtnrL9-H0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+    <h3>Supplying request options</h3>     
+    <p>The fetch() method can optionally accept a second parameter, 
+        an init object that allows you to control different settings</p>
+    <h3>Sending a request with credentials included</h3>     
+    <p>Add credentials: 'include' to the init object you pass to the fetch() method.</p>
+    <h3>Uploading a file</h3>     
+    <p>Files can be uploaded using an HTML <input type="file" /> input element, FormData() and fetch().</p>
+    <h3>Uploading multiple files</h3>     
+    <p>Files can be uploaded using an HTML <input type="file" multiple /> input element, FormData() and fetch().</p>
+    <h3>Checking that the fetch was successful</h3>     
+    <p>A fetch() promise will reject with a TypeError when a network 
+        error is encountered or CORS is misconfigured on the server-side,
+         although this usually means permission issues or similar — a 404
+          does not constitute a network error, for example.</p>
+    <h3>Headers</h3>     
+    <p>The Headers interface allows you to create your own headers
+         object via the Headers() constructor. </p>
+    <h3>Body</h3>     
+    <p>The Request and Response interfaces share the following 
+        methods to extract a body. These all return a promise that 
+        is eventually resolved with the actual content. </p>
+
 </body>
 </html>

@@ -1,4 +1,4 @@
-const name = document.getElementById('name')
+/*const name = document.getElementById('name')
 const password = document.getElementById('password')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
@@ -18,4 +18,12 @@ form.addEventListener('submit', (e) => {
     errorElement.innerText = messages.join(', ')
    }
 
-})
+})*/
+
+function validateForm() {
+   let x = document.forms["myForm"]["fname"].value;
+   if (x == "") {
+     alert("Name must be filled out");
+     return false;
+   }
+ }
