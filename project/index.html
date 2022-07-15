@@ -6,23 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100&family=Rubik:wght@300&display=swap');
+        </style>
 </head>
 <body>
     <div class="card">
+        <div class="title">
+            <h1 id="title">BeWeather</h1>
+            <p id="description">Search for any city, and stay up to date on the weather.</p>
+        </div>
         <div class="search">
             <input type="text" class="search-bar">
-            <button><svg stroke="currentColor" fill="">
-
-            </svg></button>
+            <button>Search</button>
         </div>
         <div class="weather">
-            <h2 class="city">Weather in Denver</h2>
-            <div class="temp">51°C</div>
-            <img src="" alt="" class="icon" />
-            <div class="description">Cloudy</div>
-            <div class="humidity">Himidity: 60%</div>
-            <div class="wind">Wind Speed: 6.2 km/h</div>
+            <h2 class="city">Weather in Guatemala</h2>
+            <h1 class="temp"></h1>
+            <div class="flex">
+                <img src="" alt="" class="icon" />
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
         </div>
     </div>
 </body>
