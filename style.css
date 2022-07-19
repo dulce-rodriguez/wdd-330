@@ -1,0 +1,51 @@
+body {
+    background-color: rgba(11, 54, 8, 0.438);
+}
+
+h1 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+ol {
+    list-style-type: none;
+    margin: 0;
+    line-height: 1.8;
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+li {
+    background-color: azure;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+a:link {
+    text-decoration: none;
+    line-height: 80%;
+}
+
+li:hover {
+    background-color: rgb(10, 64, 19);
+}
+a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 920px) {
+    ol {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto; 
+    }
+  }
+
+@media screen and (min-width: 1200px) {
+    ol {
+        width: 80%;
+    }
+  }
